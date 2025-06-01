@@ -62,7 +62,7 @@ public class GeoController {
         public ResponseEntity<String> getRoute(@RequestParam double startLon, @RequestParam double startLat,
                                                @RequestParam double endLon, @RequestParam double endLat, @RequestParam boolean car) {
             String url;
-            if (car) {
+            if (!car) {
                 url = "https://api.openrouteservice.org/v2/directions/driving-car?geometry_format=encodedpolyline";
             }else {
                 url = "https://api.openrouteservice.org/v2/directions/foot-walking?geometry_format=encodedpolyline";
