@@ -156,7 +156,7 @@ async function displayCards(filter=false, selectedTags = [], filterword=false) {
         `).join("") || "";
         let ph = excursion.photoPaths
         if (ph === "") {
-            ph = '../img/default.png'
+            ph = '../img/default.jpg'
         }
 
         grid.innerHTML += `
