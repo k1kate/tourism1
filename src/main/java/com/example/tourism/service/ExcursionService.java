@@ -71,7 +71,10 @@ public class ExcursionService {
                 file.getOriginalFilename().replace(file.getOriginalFilename(), newFileName);
 
                 // Путь к папке uploads в текущей рабочей директории
-                Path uploadDir = Paths.get("C:/tourism1/uploads");
+                String p = System.getProperty("user.dir");
+                System.out.println(p);
+                Path uploadDir = Paths.get(p+ "/uploads");
+
                 System.out.println(uploadDir);
                 // Создаём папку, если нет
                 if (!Files.exists(uploadDir)) {

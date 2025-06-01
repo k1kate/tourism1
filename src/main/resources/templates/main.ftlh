@@ -13,7 +13,7 @@
     </head>
     <body>
 
-    <div class="d-flex justify-content-center   " style="margin-top: 70px; margin-bottom: 70px">
+    <div class="d-flex justify-content-center mapp" >
         <div id="map" ></div>
     </div>
 

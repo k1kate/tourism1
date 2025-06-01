@@ -430,10 +430,24 @@ h4 {
     max-width: none !important;
 }
 
+.mapp {
+    margin-top: 70px;
+    margin-bottom: 70px
+}
+
 
 @media (max-width: 670px) {
     .card {
         width: 75% !important;
+    }
+
+    .nav-container .text-header{
+        font-size: 16px !important;
+        font-weight: 600;
+    }
+
+    .nav-container {
+        padding: 10px 14px !important;
     }
 
 
@@ -454,25 +468,35 @@ h4 {
     }
 
     .card {
-        width: 60% !important;
+        width: 90% !important;
+
+    }
+
+    .winlog {
+        margin-top: 2.5rem !important;
     }
 
     h4 {
-        font-size: 1.8rem !important;
+        font-size: 20px !important;
+
     }
 
-    .input-group-text {
-        font-size: 1.2rem;
+    .container .row {
+        padding-top: 0 !important;
     }
 
     .form-control {
-        font-size: 1.2rem;
+        font-size: 14px;
     }
 
     #map {
-        height: 90vh !important;
+        height: 83vh !important;
         width: 100%;
 
+    }
+
+    .mapp {
+        margin-top: 0 !important;
     }
 
     .nav-link {
@@ -480,10 +504,29 @@ h4 {
         margin-bottom: 0 !important;
 
     }
+    .nav-item a {
+        font-size: 14px !important;
+    }
 
     .nav-center {
-        transform: translateX(-40%) !important;
         gap: 0 !important;
+        transform: translateX(-48%) !important;
+    }
+
+    .form-label .text-main {
+        font-size: 16px !important;
+        margin-bottom: 0 !important;
+
+    }
+
+    .create-modal-content {
+        width: 350px !important;
+        padding: 10px !important;
+    }
+
+    .col-12 button {
+        width: 100% !important;
+        margin: 5px 0 !important;
     }
 }
 

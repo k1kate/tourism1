@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<div class="d-flex justify-content-center align-items-center vh-100">
+<div class="d-flex justify-content-center align-items-center vh-100 winlog">
     <div class="card w-50 shadow rounded">
         <div class="card-header custom-bg">
             <h4 class="d-flex justify-content-center text-main" style="margin-bottom: 0; font-size: 2rem;">Регистрация</h4>

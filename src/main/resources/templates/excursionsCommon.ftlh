@@ -7,7 +7,7 @@
     <body>
     <div class="container">
 
-        <div class="row mb-4" style="padding-top: 1.5rem !important; margin-bottom: 1rem!important ">
+        <div class="row mb-4" style="padding-top: 1.5rem; margin-bottom: 1rem!important ">
 
             <div class="col-md-2 mb-2 mb-md-0">
                 <button class="btn  w-100 text-main custom-bg custom-btn" onclick="openCreateModal()" style="background-color: #55836b !important; ">Добавить</button>
