@@ -214,7 +214,7 @@ function addPlaceMarker(place) {
 async function getexccom(id, csrfToken, csrfHeader) {
     try {
 
-        const response = await fetch("http://localhost:8080/getexccomm/" + id, {
+        const response = await fetch("/getexccomm/" + id, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -434,7 +434,7 @@ function closeModalview() {
 async function getexc(id_card, csrfToken, csrfHeader) {
     try {
 
-        const response = await fetch("http://localhost:8080/getexcursion/" + id_card, {
+        const response = await fetch("/getexcursion/" + id_card, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',

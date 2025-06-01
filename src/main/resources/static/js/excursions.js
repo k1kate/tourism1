@@ -8,7 +8,7 @@ Dropzone.autoDiscover = false;
 async function deleteexc() {
     const id = document.getElementById("id2").innerHTML;
     try {
-        const response = await fetch(`http://localhost:8080/delexc/${id}`, {
+        const response = await fetch(`/delexc/${id}`, {
             method: "DELETE",
             headers: {
                 [csrfHeader]: csrfToken
@@ -30,7 +30,7 @@ async function deleteexc() {
 async function deleteexccomm() {
     const id = document.getElementById("excursion-data").dataset.id;
     try {
-        const response = await fetch(`http://localhost:8080/deleteexccomm/${id}`, {
+        const response = await fetch(`/deleteexccomm/${id}`, {
             method: "DELETE",
             headers: {
                 [csrfHeader]: csrfToken
@@ -51,7 +51,7 @@ async function loadexcursions() {
     const id = document.getElementById("excursion-data").dataset.id;
     try {
 
-        const response = await fetch("http://localhost:8080/allexcursionsbyid/" + id, {
+        const response = await fetch("/allexcursionsbyid" + id, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ async function displayCards() {
 async function getexc(id_card) {
     try {
 
-        const response = await fetch("http://localhost:8080/getexcursion/" + id_card, {
+        const response = await fetch("/getexcursion" + id_card, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -308,7 +308,7 @@ async function createexc(title, desc, address) {
             fmData.append("file", dropzoneInstance.files[i]);
         }
 
-        let resp = await fetch('http://localhost:8080/upload', {
+        let resp = await fetch('/upload', {
             method: "POST",
             headers: {
                 [csrfHeader]: csrfToken
@@ -327,7 +327,7 @@ async function createexc(title, desc, address) {
 
 
             const id = document.getElementById("excursion-data").dataset.id;
-            const response = await fetch("http://localhost:8080/excursionsCommon/createexc/" + id, {
+            const response = await fetch("/excursionsCommon/createexc/" + id, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',

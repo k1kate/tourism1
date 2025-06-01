@@ -24,7 +24,7 @@ checkboxes.forEach(chk => {
 async function deleteexc() {
     const id = document.getElementById("id2").innerHTML;
     try {
-        const response = await fetch(`http://localhost:8080/delexc/${id}`, {
+        const response = await fetch(`/delexc/${id}`, {
             method: "DELETE",
             headers: {
                 [csrfHeader]: csrfToken
@@ -46,7 +46,7 @@ async function loadexcursions() {
 
     try {
 
-        const response = await fetch("http://localhost:8080/allexcursionscommon", {
+        const response = await fetch("/allexcursionscommon", {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ async function loadexcursionssearch(selectedTags) {
 
     try {
 
-        const response = await fetch("http://localhost:8080/searchtagscomm", {
+        const response = await fetch("/searchtagscomm", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ async function search(word) {
     });
     try {
 
-        const response = await fetch("http://localhost:8080/searchcomm/" + encodeURIComponent(word), {
+        const response = await fetch("/searchcomm/" + encodeURIComponent(word), {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -275,7 +275,7 @@ async function createexc(title, desc, valuescb) {
             tags: valuescb,
         };
 
-        const response = await fetch("http://localhost:8080/createExcursionsCommon", {
+        const response = await fetch("/createExcursionsCommon", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
