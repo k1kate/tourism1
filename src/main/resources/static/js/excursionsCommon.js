@@ -154,9 +154,11 @@ async function displayCards(filter=false, selectedTags = [], filterword=false) {
         const tagsHtml = excursion.tags?.map(tag => `
             <span class="badge me-1">${tag}</span>
         `).join("") || "";
-        let ph = "upload/" + excursion.photoPaths
+        let ph = excursion.photoPaths
         if (ph === "") {
             ph = '../img/default.jpg'
+        } else {
+            ph = "uploads/" + ph;
         }
 
         grid.innerHTML += `
