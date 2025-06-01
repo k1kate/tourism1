@@ -154,12 +154,16 @@ async function displayCards(filter=false, selectedTags = [], filterword=false) {
         const tagsHtml = excursion.tags?.map(tag => `
             <span class="badge me-1">${tag}</span>
         `).join("") || "";
+        let ph = excursion.photoPaths
+        if (ph === "") {
+            ph = '../img/default.png'
+        }
 
         grid.innerHTML += `
           <div class="card mb-3 shadow-sm card-click" onclick="openexc(${excursion.id})" style="cursor: pointer;">
             <div class="row g-0">
               <div class="col-md-4 position-relative">
-                <div class="excursion-bg" style="background-image: url('/uploads/${excursion.photoPaths}');"></div>
+                <div class="excursion-bg" style="background-image: url('${ph}');"></div>
               </div>
               <div class="col-md-8">
                 <div class="card-body" >
