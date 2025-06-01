@@ -192,7 +192,8 @@ function addPlaceMarker(place) {
             <h5>${place.title || 'Название отсутствует'}</h5>
             <p>${place.tags?.map(tag => `<span class="badge me-1">${tag}</span>`).join("") || ""}</p>
             <p style="font-size: 0.8rem"><strong>Адрес:</strong> ${place.location || 'Адрес отсутствует'}</p>
-            ${place.photoPaths ? `<img src="/uploads/${place.photoPaths[0].photoPath}" alt="Изображение экскурсии" class="card-img-top" style="height: 130px !important;">` : ''}</div>
+            ${place.photoPaths ? `<img src="/uploads/${place.photoPaths[0].photoPath}" alt="Изображение экскурсии" class="card-img-top" style="height: 130px !important;">` :
+        `<img src="../img/defaut.jpg" alt="Изображение экскурсии" class="card-img-top" style="height: 130px !important;">`}</div>
     `;
 
     markerEl.appendChild(dropdown);

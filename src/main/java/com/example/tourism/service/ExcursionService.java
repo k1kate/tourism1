@@ -101,21 +101,24 @@ public class ExcursionService {
     public List<ExcursionCard> getexccomm(List<ExcursionCommon> excursionCommon) {
         excursionCommon.sort(Comparator.comparing(ExcursionCommon::getId).reversed());
         List<ExcursionCard> new_ex = new ArrayList<>();
-
+        System.out.println(excursionCommon);
         for (ExcursionCommon s : excursionCommon) {
             ExcursionCard extemp = new ExcursionCard();
             extemp.setId(s.getId());
             extemp.setTitle(s.getTitle());
             extemp.setTags(s.getTags());
+            String photoPath = null;
             extemp.setAuthor(s.getAuthor());
-
-            String photoPath = "/img/default.jpg"; // путь для клиента
 
             if (s.getPlaces() != null && !s.getPlaces().isEmpty()) {
                 Excursion firstPlace = s.getPlaces().get(0);
                 if (firstPlace.getPhotoPaths() != null && !firstPlace.getPhotoPaths().isEmpty()) {
                     photoPath = firstPlace.getPhotoPaths().get(0).getPhotoPath();
+                } else {
+                    photoPath = "";
                 }
+            } else {
+                photoPath = "";
             }
 
             extemp.setPhotoPaths(photoPath);
@@ -123,7 +126,7 @@ public class ExcursionService {
             new_ex.add(extemp);
         }
 
-        return new_ex;
+        return  new_ex;
     }
 
     public void createexc(Excursion excursion, Long id_comm) {
