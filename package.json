@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@yandex/ymaps3-types": "^1.0.16530300"
+  },
+  "dependencies": {
+    "@deck.gl/mapbox": "^9.1.12",
+    "@yandex/ymaps3-default-ui-theme": "^0.0.19",
+    "@yandex/ymaps3-entity-tile-loader": "^0.0.14",
+    "deck.gl": "^9.1.12",
+    "maplibre-gl": "^5.5.0",
+    "ymaps": "^0.2.1"
+  }
+}
