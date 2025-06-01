@@ -51,7 +51,7 @@ async function loadexcursions() {
     const id = document.getElementById("excursion-data").dataset.id;
     try {
 
-        const response = await fetch("/allexcursionsbyid" + id, {
+        const response = await fetch("/allexcursionsbyid/" + id, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ async function displayCards() {
 async function getexc(id_card) {
     try {
 
-        const response = await fetch("/getexcursion" + id_card, {
+        const response = await fetch("/getexcursion/" + id_card, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
