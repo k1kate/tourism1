@@ -9,15 +9,15 @@
 
         <div class="row mb-4" style="padding-top: 1.5rem; margin-bottom: 1rem!important ">
 
-            <div class="col-md-2 mb-2 mb-md-0">
+            <div class="col-md-2 mb-2 mb-md-0 bbt">
                 <button class="btn  w-100 text-main custom-bg custom-btn" onclick="openCreateModal()" style="background-color: #55836b !important; ">Добавить</button>
             </div>
 
-            <div class="col-md-8 mb-2 mb-md-0">
+            <div class="col-md-8 mb-2 mb-md-0 inp">
                 <input type="text" id="searchInput" class="form-control text-main" placeholder="Поиск экскурсий..." style="color: #495057">
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2 bbt">
                 <button class="btn  w-100 text-main custom-bg custom-btn" onclick="displayCards(false, [], true)">Найти</button>
             </div>
         </div>

@@ -71,7 +71,7 @@
 
                 <ul class="dropdown-menu p-3" style="min-width: 200px;">
                     <li><p class="mb-2">${fullname}</p></li>
-                    <li><a href="/login" class="btn btn-secondary shadow-sm rounded text-main custom-bg" style="font-size: 17px; width: 100%">Выход</a></li>
+                    <li><a href="/login" class="btn btn-secondary shadow-sm rounded text-main custom-bg" style="font-size: 16px !important; width: 100%">Выход</a></li>
                 </ul>
             </div>
         </div>

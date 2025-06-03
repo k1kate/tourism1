@@ -40,7 +40,7 @@
                     <label for="inputPassword" class="form-label">
                         <h6 class="text-main" style="font-size: 17px !important; color: black">Пароль</h6>
                     </label>
-                    <input type="password" id="inputPassword" class="form-control" name="password" required>
+                    <input type="password" id="inputPassword" class="form-control ff" name="password" required>
                 </div>
 
                 <#if error??>

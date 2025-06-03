@@ -420,7 +420,7 @@ h4 {
     width: 100% !important;
 }
 
-.col-md-8 .form-control {
+.col-md-8 .ff {
     font-size: 20px !important;
 }
 
@@ -432,27 +432,60 @@ h4 {
 
 .mapp {
     margin-top: 70px;
-    margin-bottom: 70px
 }
 
 
 @media (max-width: 670px) {
-    .card {
-        width: 75% !important;
-    }
+
 
     .nav-container .text-header{
-        font-size: 16px !important;
+        font-size: 15px !important;
         font-weight: 600;
     }
 
     .nav-container {
-        padding: 10px 14px !important;
+        padding: 10px 8px !important;
+
+
     }
-
-
     .btn {
         font-size: 1.2rem !important;
+    }
+
+    .dropdown .btn {
+        font-size: 10px !important;
+    }
+
+    .col-md-2 .custom-btn{
+        padding: 3px !important;
+    }
+
+    .col-12 .custom-btn{
+        padding: 3px !important;
+    }
+
+    .create-modal-content .text-header {
+        font-size: 24px !important;
+    }
+
+    #photoCarousel .carousel-inner {
+        height: 300px !important;
+
+    }
+
+    ul.ks-cboxtags li label {
+        padding: 4px 15px !important;
+    }
+
+    .bbt {
+        padding: 0 !important;
+    }
+
+    .inp {
+        padding: 0 !important;
+    }
+    .inp input{
+        font-size: 1rem !important;
     }
 
     h4 {
@@ -460,7 +493,7 @@ h4 {
     }
 
     .input-group-text {
-        font-size: 1rem;
+        font-size: 14px;
     }
 
     .form-control {
@@ -472,9 +505,9 @@ h4 {
 
     }
 
-    .winlog {
-        margin-top: 2.5rem !important;
-    }
+    /*.winlog {*/
+    /*    margin-top: 2.5rem !important;*/
+    /*}*/
 
     h4 {
         font-size: 20px !important;
@@ -490,7 +523,7 @@ h4 {
     }
 
     #map {
-        height: 83vh !important;
+        height: 80vh !important;
         width: 100%;
 
     }
@@ -502,15 +535,27 @@ h4 {
     .nav-link {
         font-size: 17px !important;
         margin-bottom: 0 !important;
+        width: 99px;
+        display: flex;
+        justify-content: center;
 
     }
     .nav-item a {
         font-size: 14px !important;
+        padding: 8px 9px !important;
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     }
 
     .nav-center {
         gap: 0 !important;
-        transform: translateX(-48%) !important;
+        transform: none !important;
+        position: static !important;
+
+    }
+    .nav-item {
+        border-radius: .25rem;
+        /*border: 2px solid;*/
+        /*border-image: linear-gradient(to bottom, #49715f, #579d7c) 0 1;*/
     }
 
     .form-label .text-main {
@@ -536,8 +581,22 @@ h4 {
         width: 100%;
     }
 
-}
+    .container .row .col-12 {
+        flex-direction: row;
+        flex-wrap: nowrap !important;
+    }
+    .col-12 button {
+        margin: 0 5px !important;
+        max-width: none !important;
+    }
 
+}
+@media (min-width: 1000px) {
+
+    .col-12 button {
+        max-width: none !important;
+    }
+}
 
 /* 🔹 Для десктопов */
 @media (min-width: 1200px) {
@@ -559,6 +618,12 @@ h4 {
     h3 {
         font-size: 2rem;
     }
+
+
+
+    /*.col-12 .custom-btn {*/
+    /*    */
+    /*}*/
 }
 
 
